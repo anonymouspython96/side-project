@@ -43,8 +43,9 @@ export default {
 }
 
 img {
-  max-width: 40px;
-  border-radius: 50%;
+  width: 5.6rem;
+  height: auto;
+  object-fit: contain;
 }
 
 ul {
@@ -65,12 +66,15 @@ i {
 
 a:hover {
   color: var(--color-white);
+  font-size: 1.4rem;
 }
 
 .nav {
   display: flex;
 }
-
+ul,.contacts {
+  font-size: 1.2rem;
+}
 .contacts {
   display: flex;
   align-items: center;

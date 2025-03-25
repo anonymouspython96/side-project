@@ -1,7 +1,7 @@
 <template>
   <header>
     <section id="ctm"> <!-- ctm = call to main -->
-        <h1>let Emilian Timofei = Frontend Developer;</h1>
+        <h1>let Emilian Timofei <br>= "Frontend Developer";</h1>
         <p>Qui troverai una breve descrizione di chi sono, il mio CV, la mia cover letter ed i miei contatti!</p>
         <a href="#main">Scopri come<i class="fa-regular fa-circle-down"></i></a>
     </section>
@@ -33,7 +33,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  padding: 56px 0 0 80px;
 }
 
 #ctm {
@@ -42,6 +41,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 56px 0 0 80px;
 }
 
 h1 {
@@ -74,6 +74,7 @@ a:hover {
     var(--color-myred),
     var(--color-red));
     color: var(--color-black);
+  font-size: 1.8rem;
 }
 
 #ctm i {
