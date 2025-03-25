@@ -6,14 +6,8 @@
 }
 
 :root {
-    --color-110green: hsl(119, 37%, 52%);
-    --color-100green: hsl(100, 79%, 54%);
-    --color-80green: hsl(124, 79%, 54%);
-    --color-60green: hsl(124, 76%, 63%);
-    --color-40green: hsl(144, 79%, 54%);
-    --color-ygreen: hsl(75, 79%, 54%);
-    --color-agreen: hsl(165, 79%, 54%);
+    --color-myred: #AA0000;
     --color-black: #000000;
     --color-white: #ffffff;
-    --color-red: red;
+    --color-red: #e80000;
 }

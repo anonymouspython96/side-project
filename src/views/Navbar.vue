@@ -1,7 +1,7 @@
 <template>
   <nav id="box">
     <div class="nav">
-      <img src="../assets/img/th.webp" alt="logo" />
+      <img src="../assets/img/logo.png" alt="logo" />
       <ul>
         <li>
           <router-link to="/">Home</router-link>
@@ -39,7 +39,7 @@ export default {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-black);
-  color: var(--color-white);
+  color: var(--color-red);
 }
 
 img {
@@ -60,11 +60,11 @@ li {
 a,
 i {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-red);
 }
 
 a:hover {
-  color: var(--color-red);
+  color: var(--color-white);
 }
 
 .nav {
