@@ -1,13 +1,23 @@
 <template>
-  <h1>Hello World</h1>
+  <div id="app">
+    <Navbar /> <!-- Navbar visibile su tutte le pagine -->
+    <router-view /> <!-- Qui verranno caricate le varie views, Home, About, Services, Contacts -->
+    <Footer />
+  </div>
 </template>
 
 <script>
-export default {
+import './assets/main.css';
+import Navbar from './views/Navbar.vue';
+import Footer from './components/Footer.vue'
 
-}
+export default {
+  name: 'App',
+  components: {
+    Navbar,
+    Footer
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style scoped></style>
