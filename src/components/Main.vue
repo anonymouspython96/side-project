@@ -1,25 +1,13 @@
 <template>
-  <main>
+  <main id="main">
     <section class="intro">
       <h2>Chi Sono</h2>
       <p>
-        Emilian, sviluppatore esperto e appassionato di didattica, ha creato
-        questo sito web con una missione chiara: aiutare i programmatori a
-        padroneggiare il codice attraverso la Regola del 5. Questo metodo
-        innovativo si basa su un principio semplice ma potente: ripetere il
-        codice 5 volte per assimilare concetti, strutture e logica in modo
-        naturale e duraturo. Immersi in un ambiente di apprendimento dinamico,
-        gli utenti possono praticare con esercizi reali, ricevere feedback
-        immediato e consolidare le proprie competenze in modo progressivo. Ma il
-        nostro approccio va oltre la semplice memorizzazione: crediamo che la
-        programmazione sia un'arte che si affina con la pratica costante. Per
-        questo, la Regola del 5 non è solo un metodo, ma una filosofia di
-        apprendimento che trasforma i principianti in sviluppatori competenti.
-        Se vuoi imparare a programmare, migliorare la tua capacità di scrivere
-        codice pulito ed efficiente e sviluppare una mentalità da programmatore,
-        sei nel posto giusto. Inizia oggi stesso e scopri il potere della
-        ripetizione consapevole!
+        Ciao sono Emilian. Il mio linguaggio tech preferito è <i class="fa-brands fa-css3-alt"></i>. Sono appassionato di tutto il mondo dello sviluppo web. In particolare front-end. Amo il mondo dello sviluppo web. Penso che questo sia il mio passatempo preferito. Ed inoltre che il mondo dello sviluppo web mi fa vivere. Ogni sito è come un opera d'arte che chiede di essere scoperta. Ogni animazione, ogni colore, ogni font. Ogni dettaglio è importante, per questo tendo a non affidarmi troppo ai framework (pur conoscendoli s'intende). Detto ciò:
       </p>
+      <a href="#footer">Scopri altro</a>
+    </section>
+    <section class="my-face">
     </section>
   </main>
 </template>
@@ -29,31 +17,38 @@ import "../assets/main.css";
 </script>
 
 <style scoped>
-section {
+main {
   width: 100%;
-  padding: 80px 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+background-color: var(--color-black);
 }
+
 .intro {
-  background-color: var(--color-110green);
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-110green),
-    var(--color-80green)
-  );
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-p {
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 80px;
+  font-size: 2.4rem;
   text-align: justify;
-  font-size: 1.25rem;
 }
 
-h2,
-.intro p {
+.intro h2 {
   padding-bottom: 40px;
-  color: white;
+}
+
+.intro a {
+  margin-top: 40px;
+}
+
+
+.my-face {
+  background-image: url("../assets/img/me.jpg");
+  background-position-x: center;
+  background-size: cover;
+  height: 100vh;
 }
 </style>

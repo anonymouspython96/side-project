@@ -57,26 +57,6 @@ p {
   padding-bottom: 64px;
 }
 
-a {
-  font-size: 1.5rem;
-  padding: 32px 64px;
-  border-radius: 32px;
-  text-decoration: none;
-  background-color: var(--color-black);
-  color: var(--color-red);
-  border: 0.8rem solid var(--color-red);
-}
-
-a:hover {
-  background: linear-gradient(
-    to right,
-    var(--color-red),
-    var(--color-myred),
-    var(--color-red));
-    color: var(--color-black);
-  font-size: 1.8rem;
-}
-
 #ctm i {
   padding-left: 16px;
 }
