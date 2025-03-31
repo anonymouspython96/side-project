@@ -40,7 +40,7 @@ header a:hover{
 }
 
 main a {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 24px 48px;
   border-radius: 32px;
   text-decoration: none;
@@ -51,6 +51,6 @@ main a {
 
 main a:hover {
   background-color: var(--color-ared);
-  color: var(--color-grey);
-  border: 0.2rem dotted var(--color-grey);
+  color: var(--color-white);
+  border: 0.2rem dotted var(--color-white);
 }

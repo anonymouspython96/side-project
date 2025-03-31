@@ -6,11 +6,11 @@
         <a href="#main">Scopri come<i class="fa-regular fa-circle-down"></i></a>
     </section>
     <section id="tech"> <!-- tech = technologies -->
-      <i class="fa-brands fa-vuejs"></i>
-      <i class="fa-brands fa-bootstrap"></i>
-      <i class="fa-brands fa-js"></i>
-      <i class="fa-brands fa-css3-alt"></i>
-      <i class="fa-brands fa-html5"></i>
+      <div><i class="fa-brands fa-vuejs"></i></div>
+      <div><i class="fa-brands fa-bootstrap"></i></div>
+      <div><i class="fa-brands fa-js"></i></div>
+      <div><i class="fa-brands fa-css3-alt"></i></div>
+      <div><i class="fa-brands fa-html5"></i></div>
     </section>
   </header>
 </template>
@@ -70,8 +70,9 @@ p {
   gap: 32px;
 }
 
-#tech i {
+#tech div {
   font-size: 6.4rem;
   color: var(--color-white);
+  padding: 0 16px;
 }
 </style>

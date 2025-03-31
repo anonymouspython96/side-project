@@ -102,17 +102,6 @@
         <li>Romanian (Fluent)</li>
       </ul>
     </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <p>
-        None (Please see my
-        <a href="https://github.com/anonymouspython96" target="_blank"
-          >GitHub profile</a
-        >
-        for projects and code samples)
-      </p>
-    </section>
   </div>
 </template>
 

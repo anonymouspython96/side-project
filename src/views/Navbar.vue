@@ -19,9 +19,13 @@
     </div>
 
     <div class="contacts">
-      <a href="#">+39 327 974 6762</a>
-      <i class="fa-solid fa-grip-lines-vertical"></i>
-      <a href="#">emilianmail96@gmail.com</a>
+      <a
+        href="mailto:emilianmail96@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Invia email"
+        >emilianmail96@gmail.com</a
+      >
     </div>
   </nav>
 </template>
@@ -72,7 +76,8 @@ a:hover {
 .nav {
   display: flex;
 }
-ul,.contacts {
+ul,
+.contacts {
   font-size: 1.2rem;
 }
 .contacts {

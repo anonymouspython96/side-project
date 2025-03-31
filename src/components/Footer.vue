@@ -2,13 +2,23 @@
   <footer id="footer">
     <article>
       <section>
-        Mail: <a href="emilianmail96@gmail.com">emilianmail96@gmail.com</a>
+        <a
+          href="mailto:emilianmail96@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Invia email"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
       </section>
       <section>
-        LinkedIn: <a href="https://www.linkedin.com/in/timofeiemilian96/">https://www.linkedin.com/in/timofeiemilian96/</a>
+        <a href="https://www.linkedin.com/in/timofeiemilian96/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
       </section>
       <section>
-        GitHub: <a href="https://github.com/anonymouspython96">https://github.com/anonymouspython96</a>
+        <a href="https://github.com/anonymouspython96" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </section>
     </article>
     <article>
@@ -58,5 +68,9 @@ a {
 
 a:hover {
   color: var(--color-100green);
+}
+
+i {
+  font-size: 2.4rem;
 }
 </style>
