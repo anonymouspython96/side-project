@@ -14,10 +14,18 @@
   --color-grey: #222222;
   --color-lgrey: #343434;
   --color-bagrey: #bababa;
+  --scroll-bg: #000000;
+  --scroll-arrow: #ff0000;
+  --scroll-arrow-hover: #cc0000;
+  --scroll-border: #ff0000;
+  --scroll-shadow: rgba(255, 0, 0, 0.2);
+  --scroll-bg-hover: #1a1a1a; 
+  --scroll-glow: rgba(255, 0, 0, 0.6); 
+  --scroll-focus-outline: #ff3333;
 }
 
 /*anchor as buttons*/
-header a{
+header a {
   font-size: 1.5rem;
   padding: 32px 64px;
   border-radius: 32px;
@@ -27,7 +35,7 @@ header a{
   border: 0.8rem solid var(--color-red);
 }
 
-header a:hover{
+header a:hover {
   background: linear-gradient(
     to right,
     var(--color-red),
@@ -37,20 +45,4 @@ header a:hover{
   color: var(--color-white);
   font-weight: bold;
   font-size: 1.8rem;
-}
-
-main a {
-  font-size: 1.6rem;
-  padding: 24px 48px;
-  border-radius: 32px;
-  text-decoration: none;
-  background-color: var(--color-lgrey);
-  color: var(--color-red);
-  border: 0.2rem dotted var(--color-red);
-}
-
-main a:hover {
-  background-color: var(--color-ared);
-  color: var(--color-white);
-  border: 0.2rem dotted var(--color-white);
 }

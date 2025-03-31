@@ -1,18 +1,22 @@
 <template>
   <main id="main">
     <section class="intro">
-      <h2>Chi Sono</h2>
+      <h2>Who I am</h2>
       <p>
-        Ciao sono Emilian. Il mio linguaggio tech preferito è <i class="fa-brands fa-css3-alt"></i>. Sono appassionato di tutto il mondo dello sviluppo web. In particolare front-end. Amo il mondo dello sviluppo web. Penso che questo sia il mio passatempo preferito. Ed inoltre che il mondo dello sviluppo web mi fa vivere. Ogni sito è come un opera d'arte che chiede di essere scoperta. Ogni animazione, ogni colore, ogni font. Ogni dettaglio è importante, per questo tendo a non affidarmi troppo ai framework (pur conoscendoli). Detto ciò:
+        Hi, I’m Emilian. My favorite tech language is . I’m passionate about the
+        entire world of web development, particularly front-end. I love the
+        world of web development—it’s my favorite hobby, and it’s what keeps me
+        going. Every website is like a piece of art waiting to be discovered.
+        Every animation, every color, every font. Every detail matters, which is
+        why I try not to rely too heavily on frameworks (even though I know
+        them). That said:
       </p>
-      <router-link to="/cv">Scopri altro</router-link>
     </section>
-    <section class="my-face">
-    </section>
+    <section class="my-face"></section>
   </main>
 </template>
 
-<script>
+<script setup>
 import "../assets/main.css";
 </script>
 
@@ -21,7 +25,11 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: linear-gradient(to bottom, var(--color-myred), var(--color-black));
+  background: linear-gradient(
+    to bottom,
+    var(--color-myred),
+    var(--color-black)
+  );
 }
 
 .intro {
@@ -30,10 +38,9 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   padding: 0 80px;
-  font-size: 2.4rem;
-  text-align: justify;
+  font-size: 2.4rem;;
 }
 
 .intro h2 {
@@ -44,11 +51,12 @@ main {
   margin-top: 40px;
 }
 
-
 .my-face {
   background-image: url("../assets/img/me.jpg");
   background-position-x: center;
   background-size: cover;
   height: 100vh;
+  width: 100%;
+  border-radius: 50%;
 }
 </style>

@@ -44,4 +44,7 @@ export default {
 a {
   text-decoration: none;
 }
+i:hover {
+  color: var(--color-myred);
+}
 </style>

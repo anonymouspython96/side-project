@@ -67,7 +67,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-100green);
+  color: var(--color-red);
 }
 
 i {
