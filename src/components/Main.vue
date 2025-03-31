@@ -3,7 +3,7 @@
     <section class="intro">
       <h2>Chi Sono</h2>
       <p>
-        Ciao sono Emilian. Il mio linguaggio tech preferito è <i class="fa-brands fa-css3-alt"></i>. Sono appassionato di tutto il mondo dello sviluppo web. In particolare front-end. Amo il mondo dello sviluppo web. Penso che questo sia il mio passatempo preferito. Ed inoltre che il mondo dello sviluppo web mi fa vivere. Ogni sito è come un opera d'arte che chiede di essere scoperta. Ogni animazione, ogni colore, ogni font. Ogni dettaglio è importante, per questo tendo a non affidarmi troppo ai framework (pur conoscendoli s'intende). Detto ciò:
+        Ciao sono Emilian. Il mio linguaggio tech preferito è <i class="fa-brands fa-css3-alt"></i>. Sono appassionato di tutto il mondo dello sviluppo web. In particolare front-end. Amo il mondo dello sviluppo web. Penso che questo sia il mio passatempo preferito. Ed inoltre che il mondo dello sviluppo web mi fa vivere. Ogni sito è come un opera d'arte che chiede di essere scoperta. Ogni animazione, ogni colore, ogni font. Ogni dettaglio è importante, per questo tendo a non affidarmi troppo ai framework (pur conoscendoli). Detto ciò:
       </p>
       <a href="#footer">Scopri altro</a>
     </section>
