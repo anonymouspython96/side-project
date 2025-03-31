@@ -13,6 +13,7 @@
   --color-ared: #880000;
   --color-grey: #222222;
   --color-lgrey: #343434;
+  --color-bagrey: #bababa;
 }
 
 /*anchor as buttons*/
@@ -33,7 +34,8 @@ header a:hover{
     var(--color-myred),
     var(--color-red)
   );
-  color: var(--color-black);
+  color: var(--color-white);
+  font-weight: bold;
   font-size: 1.8rem;
 }
 

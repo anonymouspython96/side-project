@@ -21,7 +21,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-background-color: var(--color-black);
+  background: linear-gradient(to bottom, var(--color-myred), var(--color-black));
 }
 
 .intro {

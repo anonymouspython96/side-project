@@ -1,7 +1,7 @@
 <template>
   <header>
     <section id="ctm"> <!-- ctm = call to main -->
-        <h1>let Emilian Timofei <br>= "Frontend Developer";</h1>
+        <h1>let emilianTimofei = "Frontend Developer";</h1>
         <p>Qui troverai una breve descrizione di chi sono, il mio CV, la mia cover letter ed i miei contatti!</p>
         <a href="#main">Scopri come<i class="fa-regular fa-circle-down"></i></a>
     </section>
