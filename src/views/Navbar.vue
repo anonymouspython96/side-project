@@ -1,34 +1,39 @@
 <template>
-  <nav id="box">
-    <div class="nav">
-      <img src="../assets/img/logo.png" alt="logo" />
-      <div class="hamburger" @click="toggleMenu">
-        <i class="fas fa-bars"></i>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="../assets/img/logo.png" alt="Emilian Timofei Logo" class="logo">
+        <div class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
+      
       <ul :class="{ 'active': isMenuOpen }">
         <li>
-          <router-link to="/">Home</router-link>
+          <router-link to="/" exact-active-class="active-link">Home</router-link>
         </li>
         <li>
-          <router-link to="/cv">Curriculum Vitae</router-link>
+          <router-link to="/cv" active-class="active-link">Curriculum Vitae</router-link>
         </li>
         <li>
-          <router-link to="/cl">Cover Letter</router-link>
+          <router-link to="/cl" active-class="active-link">Cover Letter</router-link>
         </li>
         <li>
-          <router-link to="/contacts">Contacts</router-link>
+          <router-link to="/contacts" active-class="active-link">Contacts</router-link>
         </li>
       </ul>
-    </div>
 
-    <div class="contacts">
-      <a
-        href="mailto:emilianmail96@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Invia email"
-        >emilianmail96@gmail.com</a
-      >
+      <div class="email-contact">
+        <a
+          href="mailto:emilianmail96@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Send email to Emilian"
+        >
+          <i class="fas fa-envelope"></i>
+          <span>emilianmail96@gmail.com</span>
+        </a>
+      </div>
     </div>
   </nav>
 </template>
@@ -45,126 +50,183 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    closeMenu() {
+      this.isMenuOpen = false;
     }
   }
 };
 </script>
 
 <style scoped>
-#box {
+#navbar {
   width: 100%;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
   background-color: var(--color-black);
-  color: var(--color-red);
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-img {
-  width: 5.6rem;
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
   height: auto;
-  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 ul {
   display: flex;
-  align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  padding-left: 32px;
+  position: relative;
 }
 
-a,
-i {
+a {
+  color: var(--color-white);
   text-decoration: none;
-  color: var(--color-red);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 20px 15px;
+  display: block;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: var(--color-white);
-  font-size: 1.4rem;
+  color: var(--color-red);
 }
 
-.nav {
+.active-link {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  height: 2px;
+  background-color: var(--color-red);
+}
+
+.email-contact a {
   display: flex;
   align-items: center;
+  gap: 8px;
+  color: var(--color-gblack);
 }
-ul,
-.contacts {
+
+.email-contact a:hover {
+  color: var(--color-red);
+}
+
+.email-contact i {
   font-size: 1.2rem;
-}
-.contacts {
-  display: flex;
-  align-items: center;
-}
-
-.contacts a,
-i {
-  padding-left: 32px;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 1.5rem;
-  margin-left: 20px;
+  padding: 10px;
+  margin-left: 15px;
 }
 
-@media (max-width: 960px) {
-  #box {
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.hamburger i {
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
 
-  .nav {
-    width: 100%;
+/* Mobile styles */
+@media (max-width: 992px) {
+  .nav-container {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .logo-container {
+    padding: 15px 0;
     justify-content: space-between;
   }
-
-  .hamburger {
-    display: block;
-  }
-
-  .contacts {
-    display: none;
-  }
-
+  
   ul {
     display: none;
     flex-direction: column;
     width: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: var(--color-black);
-    padding: 20px 0;
-    z-index: 1000;
+    background-color: var(--color-dark-black);
+    padding: 10px 0;
   }
-
+  
   ul.active {
     display: flex;
   }
-
+  
   li {
-    padding: 10px 0;
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
-
-  li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  
+  a {
+    padding: 15px;
   }
-
-  ul li:last-child {
+  
+  .active-link::after {
+    display: none;
+  }
+  
+  .email-contact {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  /* Show email in mobile menu */
+  ul.active li:last-child {
     display: flex;
     justify-content: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
+}
 
-  ul li:last-child a {
-    padding: 0;
+@media (max-width: 576px) {
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  a {
+    font-size: 1rem;
   }
 }
 </style>
