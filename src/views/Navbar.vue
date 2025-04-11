@@ -10,16 +10,13 @@
       
       <ul :class="{ 'active': isMenuOpen }">
         <li>
-          <router-link to="/" exact-active-class="active-link">Home</router-link>
+          <router-link to="/" exact-active-class="active-link" @click="closeMenu">Home</router-link>
         </li>
         <li>
-          <router-link to="/cv" active-class="active-link">Curriculum Vitae</router-link>
+          <router-link to="/cl" active-class="active-link" @click="closeMenu">Cover Letter</router-link>
         </li>
         <li>
-          <router-link to="/cl" active-class="active-link">Cover Letter</router-link>
-        </li>
-        <li>
-          <router-link to="/contacts" active-class="active-link">Contacts</router-link>
+          <router-link to="/contacts" active-class="active-link" @click="closeMenu">Contacts</router-link>
         </li>
       </ul>
 
