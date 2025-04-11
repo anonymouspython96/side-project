@@ -17,7 +17,11 @@
         <h2>Dear Hiring Manager,</h2>
       </section>
 
-      <section class="paragraph" v-for="(para, index) in paragraphs" :key="index">
+      <section
+        class="paragraph"
+        v-for="(para, index) in paragraphs"
+        :key="index"
+      >
         <i class="paragraph-icon fas" :class="para.icon"></i>
         <p>{{ para.text }}</p>
       </section>
@@ -30,17 +34,6 @@
         </div>
       </section>
     </main>
-
-    <footer class="letter-footer">
-      <div class="social-links">
-        <a href="https://github.com/anonymouspython96" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/timofeiemilian96/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -50,24 +43,24 @@ export default {
     return {
       paragraphs: [
         {
-          icon: 'fa-user-tie',
-          text: "I am writing to express my interest in the Junior Front-End Web Developer position at Joinrs. With a background in web development, a Bachelor's degree in Computer Science from First Tech Academy (Boolean - Italy), and hands-on experience at WeGlad, I am eager to contribute to your team and grow within an innovative and supportive environment."
+          icon: "fa-user-tie",
+          text: "I am writing to express my interest in the Junior Front-End Developer position at your company. With a solid foundation in web development, a certification from First Tech Academy (Boolean - Italy), and hands-on experience in real-world projects, I am eager to bring my skills, curiosity, and problem-solving mindset to a team that values innovation and growth.",
         },
         {
-          icon: 'fa-briefcase',
-          text: "During my time at WeGlad, I developed responsive interfaces using modern web technologies while collaborating with cross-functional teams. My work with React.js and Vue.js focused on creating user-centric solutions that followed best UI/UX practices, including performance optimization and technical debt reduction."
+          icon: "fa-briefcase",
+          text: "My recent experience at WeGlad allowed me to contribute to the development of responsive and accessible user interfaces using React.js and Vue.js. Working in cross-functional teams, I focused on performance optimization, UI/UX improvements, and maintaining clean, scalable code. This experience strengthened my ability to transform design ideas into intuitive digital experiences.",
         },
         {
-          icon: 'fa-code',
-          text: "My portfolio demonstrates front-end development expertise through projects like my personal website built with Vue.js. I prioritize responsive design, accessibility, and performance optimization, with additional examples available on GitHub."
+          icon: "fa-code",
+          text: "I’ve also built a variety of personal projects — including a portfolio website using Vue.js — where I emphasized responsiveness, accessibility, and maintainability. You can view more of my work and code samples on my GitHub.",
         },
         {
-          icon: 'fa-rocket',
-          text: "I'm drawn to Joinrs' commitment to nurturing junior talent through remote opportunities and mentorship. This aligns perfectly with my desire to grow in a supportive environment that values continuous learning."
-        }
-      ]
+          icon: "fa-rocket",
+          text: "What drives me is the opportunity to continuously learn and build things that have real impact. I’m especially motivated to work in environments that invest in junior developers, offer mentorship, and encourage experimentation. I believe that growing developers grow great products. Thank you for considering my application. I look forward to the opportunity to contribute to your team and learn alongside experienced professionals.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

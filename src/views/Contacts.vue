@@ -48,6 +48,13 @@ export default {
           url: "https://github.com/anonymouspython96",
           label: "GitHub",
           ariaLabel: "Visit Emilian's GitHub profile"
+        },
+        {
+          id: 4,
+          icon: "fa-brands fa-whatsapp",
+          url: "https://wa.me/+393508324707", // Replace with actual WhatsApp number
+          label: "WhatsApp",
+          ariaLabel: "Chat with Emilian on WhatsApp"
         }
       ]
     };

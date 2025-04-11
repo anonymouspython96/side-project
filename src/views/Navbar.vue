@@ -19,18 +19,6 @@
           <router-link to="/contacts" active-class="active-link" @click="closeMenu">Contacts</router-link>
         </li>
       </ul>
-
-      <div class="email-contact">
-        <a
-          href="mailto:emilianmail96@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Send email to Emilian"
-        >
-          <i class="fas fa-envelope"></i>
-          <span>emilianmail96@gmail.com</span>
-        </a>
-      </div>
     </div>
   </nav>
 </template>
@@ -129,21 +117,6 @@ a:hover {
   right: 15px;
   height: 2px;
   background-color: var(--color-red);
-}
-
-.email-contact a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-gblack);
-}
-
-.email-contact a:hover {
-  color: var(--color-red);
-}
-
-.email-contact i {
-  font-size: 1.2rem;
 }
 
 .hamburger {

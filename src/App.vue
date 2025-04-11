@@ -7,8 +7,6 @@
       class="scroll-to-top"
       :class="{ 'show': isVisible }"
       @click="scrollToTop"
-      @mouseover="isHovered = true"
-      @mouseleave="isHovered = false"
       aria-label="Scroll to top"
     >
       <svg
@@ -17,13 +15,9 @@
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        :style="{ 
-          transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-          transition: 'transform 0.2s ease'
-        }"
       >
         <path
-          :fill="isHovered ? hoverColor : defaultColor"
+          fill="var(--color-red)"
           d="M12 4L4 12L5.41421 13.4142L12 6.82843L18.5858 13.4142L20 12L12 4Z"
         />
       </svg>
@@ -45,15 +39,11 @@ export default {
   data() {
     return {
       isVisible: false,
-      isHovered: false,
-      defaultColor: "var(--color-red)",
-      hoverColor: "var(--color-dark-red)",
       scrollThreshold: 300
     };
   },
   computed: {
     shouldShowFooter() {
-      // Hide footer on contact page or any other pages you specify
       return !['/contacts'].includes(this.$route.path);
     }
   },
@@ -66,7 +56,6 @@ export default {
         top: 0,
         behavior: "smooth"
       });
-      this.isHovered = false;
     }
   },
   mounted() {
@@ -79,13 +68,6 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .scroll-to-top {
   position: fixed;
   bottom: 2rem;
@@ -93,8 +75,7 @@ export default {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: var(--color-black);
-  box-shadow: 0 2px 15px rgba(255, 0, 0, 0.25);
+  background: var(--color-white);
   border: 2px solid var(--color-red);
   cursor: pointer;
   display: flex;
@@ -102,9 +83,9 @@ export default {
   justify-content: center;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s ease;
   z-index: 1000;
-  outline: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-to-top.show {
@@ -113,50 +94,24 @@ export default {
 }
 
 .scroll-to-top:hover {
-  background: var(--color-dark-black);
-  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.35);
-  border-color: var(--color-dark-red);
+  transform: translateY(0) scale(1.1);
+  background: var(--color-red);
 }
 
-.scroll-to-top:focus-visible {
-  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5);
+.scroll-to-top:hover path {
+  fill: var(--color-white);
 }
 
-/* Animation for the first appearance */
-@keyframes bounce-in {
-  0% {
-    transform: translateY(20px) scale(0.8);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0) scale(1.1);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
+.scroll-to-top:active {
+  transform: translateY(0) scale(0.95);
 }
 
-.scroll-to-top.show {
-  animation: bounce-in 0.4s ease-out;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .scroll-to-top {
-    width: 3rem;
-    height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .scroll-to-top {
-    width: 2.8rem;
-    height: 2.8rem;
-    bottom: 1rem;
-    right: 1rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 </style>

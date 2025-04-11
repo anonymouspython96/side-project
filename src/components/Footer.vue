@@ -2,6 +2,17 @@
   <footer id="footer">
     <article class="social-links">
       <section>
+        <a 
+          href="https://wa.me/+393508324707"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chatta su WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="sr-only">WhatsApp</span>
+        </a>
+      </section>
+      <section>
         <a
           href="mailto:emilianmail96@gmail.com"
           target="_blank"
@@ -37,8 +48,8 @@
     </article>
     <article class="legal-info">
       <p>&copy; Copyright Emilian Timofei 2025. All rights reserved.</p>
-      <p><a href="#" aria-label="Privacy Policy">Privacy Policy</a></p>
-      <p><a href="#" aria-label="Terms and Conditions">Terms & Conditions</a></p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
     </article>
   </footer>
 </template>
