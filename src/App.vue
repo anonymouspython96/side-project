@@ -66,7 +66,6 @@ export default {
         top: 0,
         behavior: "smooth"
       });
-      // Reset hover state after click
       this.isHovered = false;
     }
   },

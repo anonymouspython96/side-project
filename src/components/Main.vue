@@ -32,30 +32,14 @@
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Front-End Technologies</h3>
           <ul>
-            <li>HTML5</li>
-            <li>CSS3/Sass</li>
-            <li>JavaScript (ES6+)</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Frameworks/Libraries</h3>
-          <ul>
-            <li>Vue.js</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Tools & Methods</h3>
-          <ul>
-            <li>Git/GitHub</li>
-            <li>VS Code</li>
-            <li>Responsive Design</li>
-            <li>Jest/Cypress</li>
+            <li>Metadata</li>
+            <li>Computational thinking</li>
+            <li>Problem solving</li>
+            <li>
+              GitHub profile with the source code of my website:
+              https://github.com/anonymouspython96
+            </li>
           </ul>
         </div>
       </div>
@@ -64,10 +48,33 @@
     <section class="education-section">
       <h2>Education</h2>
       <div class="education-item">
+        <h3>Microsoft Office Specialist: Excel Certification</h3>
+        <p>Excel</p>
+        <br />
+        <p class="location">Italy</p>
+        <p class="date">Graduated: September 2024</p>
+      </div>
+      <div class="education-item">
         <h3>First Tech Academy (Boolean - Italy)</h3>
-        <p class="location">Turin, Italy</p>
+        <p>Creation of dynamic and responsive web applications</p>
+        <p>Acquired skills in HTML, CSS, SCSS, JS</p>
+        <p>UI/UX design</p>
+        <p>SEO</p>
+        <p>BOOTSTRAP, Vue.js</p>
+        <p>Code control via GIT</p>
+        <hr />
+        <p class="location">Italy</p>
         <p class="date">Graduated: July 2024</p>
-        <p class="description">Full-stack web development intensive program</p>
+      </div>
+      <div class="education-item">
+        <h3>
+          Diploma in Administration, Finance, and Marketing <br />
+          Specialization in Business Information Systems
+        </h3>
+        <br />
+        <p class="location">Italy</p>
+        <p class="description">Istituto Germano Sommellier</p>
+        <p class="date">July 2017</p>
       </div>
     </section>
 
@@ -75,32 +82,104 @@
       <h2>Professional Experience</h2>
       <div class="job">
         <div class="job-header">
-          <h3>Junior Front-End Developer</h3>
-          <p class="company">WeGlad</p>
-          <p class="job-details">
-            Intership | Remote | August 2024 - September 2024
-          </p>
+          <h3>Front End Web Developer (Remote)</h3>
+          <p class="company">WeGlad - Country: Italy</p>
+          <p class="job-details">August 2024 - September 2024</p>
         </div>
         <ul class="job-responsibilities">
           <li>
             <i class="fas fa-code"></i>
-            Developed responsive interfaces using media queries and modern CSS
+            Responsive development of the WeGlad application and its components
           </li>
           <li>
-            <i class="fas fa-paint-brush"></i>
-            Implemented UI/UX best practices for content layout and positioning
+            <i class="fas fa-code"></i>
+            Design and content creation
           </li>
           <li>
-            <i class="fas fa-cogs"></i>
-            Utilized React.js and Redux for state management
+            <i class="fas fa-code"></i>
+            UI/UX
           </li>
           <li>
-            <i class="fas fa-bug"></i>
-            Improved code quality by resolving magic strings/numbers issues
+            <i class="fas fa-code"></i>
+            SEO practices
           </li>
           <li>
-            <i class="fas fa-mobile-alt"></i>
-            Conducted cross-device testing with Cypress
+            <i class="fas fa-code"></i>
+            Use of React.js and Redux
+          </li>
+          <li>
+            <i class="fas fa-code"></i>
+            SCSS, HTML5, JS
+          </li>
+          <li>
+            <i class="fas fa-code"></i>
+            BOOTSTRAP
+          </li>
+          <li>
+            <i class="fas fa-code"></i>
+            Resolving issues related to magic strings and magic numbers
+          </li>
+          <li>
+            <i class="fas fa-code"></i>
+            Testing using the Cypress method
+          </li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-header">
+          <h3>Photo Seller</h3>
+          <p class="company">
+            Foto di Alex Lo Votrico - City: Bari - Country: Italy
+          </p>
+          <p class="job-details">July 2016 – December 2024</p>
+        </div>
+        <ul class="job-responsibilities">
+          <li>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Sale of photographs
+          </li>
+          <li>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Client negotiation
+          </li>
+          <li>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Strategies to maximize profits
+          </li>
+          <li>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Distribution of high-quality photos during events
+          </li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-header">
+          <h3>Team Leader Sales</h3>
+          <p class="company">
+            AIESEC Country: Italy
+          </p>
+          <p class="job-details">March 2017 – March 2018</p>
+        </div>
+        <ul class="job-responsibilities">
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            Managed a team of 4 sales members
+          </li>
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            Sold volunteering projects to schools
+          </li>
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            Mentored junior salespeople
+          </li>
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            Team activities managed via CRM
+          </li>
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            Monitored team performance
           </li>
         </ul>
       </div>
@@ -200,11 +279,14 @@ main {
   /* Stile per l'immagine di sfondo */
   background-image: url("../assets/img/me.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-position: center -80px;
   /* Effetto hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+hr {
+  width: 50%;
+  margin: 1rem 0;
 }
 
 .my-face:hover {
@@ -250,13 +332,9 @@ section {
 
 .skill-category {
   background-color: var(--color-light-gray);
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 6px;
   transition: transform 0.3s ease;
-}
-
-.skill-category:hover {
-  transform: translateY(-5px);
 }
 
 .job,
@@ -284,6 +362,10 @@ section {
 
 ul {
   padding-left: 1.5rem;
+}
+
+.skill-category li {
+  padding: 0;
 }
 
 li {
