@@ -172,25 +172,24 @@ export default {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
   }
   
   .contact-link {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    padding: 1.5rem;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
-  }
+  width: 150px;
+  height: 150px;
+  max-width: none;
+  flex-direction: column;
+}
   
   .contact-link i {
+    font-size: 2rem;
     margin-bottom: 0;
-    font-size: 2rem;
   }
-  
-  .contact-title {
-    font-size: 2rem;
+
+  .contact-label {
+    white-space: nowrap; /* Previene il testo a capo */
+    font-size: 1rem; /* Riduci dimensione testo se necessario */
   }
 }
 </style>

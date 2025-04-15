@@ -436,6 +436,11 @@ li i {
 
 /* Media Queries */
 @media (max-width: 1082px) {
+  .my-face {
+    width: 220px;
+    height: 220px;
+    background-position: center -60px; /* Riduci l'offset verticale */
+  }
   main {
     padding: 48px;
   }
@@ -443,14 +448,14 @@ li i {
   .intro h2 {
     font-size: 2.5rem;
   }
-
-  .my-face {
-    width: 220px;
-    height: 220px;
-  }
 }
 
 @media (max-width: 879px) {
+  .my-face {
+    width: 180px;
+    height: 180px;
+    background-position: center -60px; /* Ulteriore riduzione */
+  }
   main {
     padding: 32px;
   }
@@ -466,15 +471,14 @@ li i {
   .intro p {
     font-size: 1.1rem;
   }
-
-  .my-face {
-    width: 180px;
-    height: 180px;
-    margin: 2rem auto;
-  }
 }
 
 @media (max-width: 549px) {
+  .my-face {
+    width: 180px;
+    height: 180px;
+    background-position: center -60px; /* Mostra più porzione dell'immagine */
+  }
   main {
     padding: 24px 16px;
   }
@@ -492,6 +496,15 @@ li i {
     width: 150px;
     height: 150px;
     border-width: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .my-face {
+    width: 125px;
+    height: 125px;
+    background-position: center -40px; /* Offset minimo per mobile */
+    background-size: 110% auto; /* Mostra più porzione dell'immagine */
   }
 }
 </style>

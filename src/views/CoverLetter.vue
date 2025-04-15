@@ -4,10 +4,7 @@
       <h1>Timofei Emilian</h1>
       <div class="contact-info">
         <p>
-          <i class="fas fa-map-marker-alt"></i> Turin, Italy |
-          <a href="mailto:emilianmail96@gmail.com">
-            <i class="fas fa-envelope"></i> emilianmail96@gmail.com
-          </a>
+          <i class="fas fa-map-marker-alt"></i> Turin, Italy
         </p>
       </div>
     </header>
@@ -44,19 +41,19 @@ export default {
       paragraphs: [
         {
           icon: "fa-user-tie",
-          text: "I am writing to express my interest in the Junior Front-End Developer position at your company. With a solid foundation in web development, a certification from First Tech Academy (Boolean - Italy), and hands-on experience in real-world projects, I am eager to bring my skills, curiosity, and problem-solving mindset to a team that values innovation and growth.",
+          text: "I am excited to apply for the Junior Front-End Developer position at your company, where I aim to leverage my robust technical foundation in web development, certified training from First Tech Academy (Boolean - Italy), and hands-on project experience to contribute to a team passionate about crafting innovative digital solutions.",
         },
         {
           icon: "fa-briefcase",
-          text: "My recent experience at WeGlad allowed me to contribute to the development of responsive and accessible user interfaces using React.js and Vue.js. Working in cross-functional teams, I focused on performance optimization, UI/UX improvements, and maintaining clean, scalable code. This experience strengthened my ability to transform design ideas into intuitive digital experiences.",
+          text: "During my tenure at WeGlad, I honed my expertise in developing responsive, accessibility-first interfaces using React.js and Vue.js. Collaborating within agile, cross-functional teams, I prioritized performance optimization and UI/UX enhancements while ensuring code scalability and readability. This experience not only sharpened my technical execution but also deepened my commitment to transforming design concepts into intuitive, user-centric interfaces that align with business objectives.",
         },
         {
           icon: "fa-code",
-          text: "I’ve also built a variety of personal projects — including a portfolio website using Vue.js — where I emphasized responsiveness, accessibility, and maintainability. You can view more of my work and code samples on my GitHub.",
+          text: "Beyond professional work, I actively expand my skillset through self-driven projects. For example, I engineered a dynamic portfolio website using Vue.js, showcasing modern web principles like mobile-first responsiveness and semantic HTML5. My GitHub profile features detailed code repositories that highlight my dedication to writing clean, maintainable code and experimenting with emerging tools. What excites me most about this opportunity is the reputation for nurturing junior talent through mentorship and collaborative innovation. ",
         },
         {
           icon: "fa-rocket",
-          text: "What drives me is the opportunity to continuously learn and build things that have real impact. I’m especially motivated to work in environments that invest in junior developers, offer mentorship, and encourage experimentation. I believe that growing developers grow great products. Thank you for considering my application. I look forward to the opportunity to contribute to your team and learn alongside experienced professionals.",
+          text: "I thrive in environments where curiosity is rewarded, iteration is embraced, and developer growth is viewed as integral to product excellence. I’m particularly eager to contribute fresh perspectives to your team while learning from seasoned professionals who value both technical rigor and creative problem-solving.",
         },
       ],
     };
