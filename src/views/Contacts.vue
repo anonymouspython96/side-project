@@ -1,8 +1,8 @@
 <template>
   <article id="contacts" class="contacts-container">
     <div class="contacts-content">
-      <h2 class="contact-title">Get In Touch</h2>
-      <p class="contact-subtitle">Feel free to reach out through any of these channels</p>
+      <h2 class="contact-title">{{ otherMagicStrings[0].h2 }}</h2>
+      <p class="contact-subtitle">{{  otherMagicStrings[0].p }}</p>
       
       <div class="contact-methods">
         <section class="contact-card" v-for="contact in contacts" :key="contact.id">
@@ -27,6 +27,12 @@ export default {
   name: "Contacts",
   data() {
     return {
+      otherMagicStrings: [
+        {
+          h2: "Get In Touch",
+          p: "Feel free to reach out through any of these channels"
+        }
+      ],
       contacts: [
         {
           id: 1,
@@ -52,7 +58,7 @@ export default {
         {
           id: 4,
           icon: "fa-brands fa-whatsapp",
-          url: "https://wa.me/+393508324707", // Replace with actual WhatsApp number
+          url: "https://wa.me/+393508324707",
           label: "WhatsApp",
           ariaLabel: "Chat with Emilian on WhatsApp"
         }
@@ -188,8 +194,8 @@ export default {
   }
 
   .contact-label {
-    white-space: nowrap; /* Previene il testo a capo */
-    font-size: 1rem; /* Riduci dimensione testo se necessario */
+    white-space: nowrap;
+    font-size: 1rem; 
   }
 }
 </style>

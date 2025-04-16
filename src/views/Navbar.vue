@@ -10,13 +10,13 @@
       
       <ul :class="{ 'active': isMenuOpen }">
         <li>
-          <router-link to="/" exact-active-class="active-link" @click="closeMenu">Home</router-link>
+          <router-link to="/" exact-active-class="active-link" @click="closeMenu">{{ otherMagicStrings[0].firstLink }}</router-link>
         </li>
         <li>
-          <router-link to="/cl" active-class="active-link" @click="closeMenu">Cover Letter</router-link>
+          <router-link to="/cl" active-class="active-link" @click="closeMenu">{{ otherMagicStrings[0].secondLink }}</router-link>
         </li>
         <li>
-          <router-link to="/contacts" active-class="active-link" @click="closeMenu">Contacts</router-link>
+          <router-link to="/contacts" active-class="active-link" @click="closeMenu">{{ otherMagicStrings[0].thirdLink }}</router-link>
         </li>
       </ul>
     </div>
@@ -29,7 +29,14 @@ export default {
   name: "Navbar",
   data() {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      otherMagicStrings: [
+        {
+          firstLink: "Home",
+          secondLink: "Cover Letter",
+          thirdLink: "Contacts"
+        }
+      ]
     };
   },
   methods: {

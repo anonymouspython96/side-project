@@ -2,14 +2,14 @@
   <footer id="footer">
     <article class="social-links">
       <section>
-        <a 
+        <a
           href="https://wa.me/+393508324707"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chatta su WhatsApp"
         >
           <i class="fa-brands fa-whatsapp"></i>
-          <span class="sr-only">WhatsApp</span>
+          <span class="sr-only">{{ otherMagicStrings[0].wA }}</span>
         </a>
       </section>
       <section>
@@ -20,36 +20,36 @@
           aria-label="Invia email"
         >
           <i class="fa-regular fa-envelope"></i>
-          <span class="sr-only">Email</span>
+          <span class="sr-only">{{ otherMagicStrings[0].eM }}</span>
         </a>
       </section>
       <section>
-        <a 
-          href="https://www.linkedin.com/in/timofeiemilian96/" 
+        <a
+          href="https://www.linkedin.com/in/timofeiemilian96/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <i class="fa-brands fa-linkedin-in"></i>
-          <span class="sr-only">LinkedIn</span>
+          <span class="sr-only">{{ otherMagicStrings[0].lI }}</span>
         </a>
       </section>
       <section>
-        <a 
-          href="https://github.com/anonymouspython96" 
+        <a
+          href="https://github.com/anonymouspython96"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
           <i class="fa-brands fa-github"></i>
-          <span class="sr-only">GitHub</span>
+          <span class="sr-only">{{ otherMagicStrings[0].gH }}</span>
         </a>
       </section>
     </article>
     <article class="legal-info">
-      <p>&copy; Copyright Emilian Timofei 2025. All rights reserved.</p>
-      <p>Terms & Conditions</p>
-      <p>Privacy Policy</p>
+      <p>{{ otherMagicStrings[0].firstP }}</p>
+      <p>{{ otherMagicStrings[0].secondP }}</p>
+      <p>{{ otherMagicStrings[0].thirdP }}</p>
     </article>
   </footer>
 </template>
@@ -58,6 +58,21 @@
 import "../assets/main.css";
 export default {
   name: "Footer",
+  data() {
+    return {
+      otherMagicStrings: [
+        {
+          wA: "WhatsApp",
+          eM: "Email",
+          lI: "LinkedIn",
+          gH: "GitHub",
+          firstP: "&copy; Copyright Emilian Timofei 2025. All rights reserved.",
+          secondP: "Terms & Conditions",
+          thirdP: "Privacy Policy",
+        }
+      ],
+    };
+  },
 };
 </script>
 
@@ -146,11 +161,11 @@ i {
     padding: 24px;
     gap: 24px;
   }
-  
+
   .social-links {
     gap: 32px;
   }
-  
+
   i {
     font-size: 2rem;
   }
@@ -160,16 +175,16 @@ i {
   footer {
     padding: 16px;
   }
-  
+
   .social-links {
     gap: 24px;
   }
-  
+
   .legal-info {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   i {
     font-size: 1.8rem;
   }

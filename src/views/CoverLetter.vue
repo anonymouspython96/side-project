@@ -1,17 +1,17 @@
 <template>
   <div id="cl" class="cover-letter">
     <header class="letter-header">
-      <h1>Timofei Emilian</h1>
+      <h2>{{ otherMagicStrings[0].firstH2 }}</h2>
       <div class="contact-info">
         <p>
-          <i class="fas fa-map-marker-alt"></i> Turin, Italy
+          <i class="fas fa-map-marker-alt"></i> {{ otherMagicStrings[0].p }}
         </p>
       </div>
     </header>
 
     <main class="letter-content">
       <section class="salutation">
-        <h2>Dear Hiring Manager,</h2>
+        <h2>{{ otherMagicStrings[0].secondH2 }}</h2>
       </section>
 
       <section
@@ -24,10 +24,10 @@
       </section>
 
       <section class="closing">
-        <h3>Sincerely,</h3>
+        <h3>{{ otherMagicStrings[0].firstH3 }}</h3>
         <div class="signature">
           <i class="fas fa-pen-nib"></i>
-          <h3>Timofei Emilian</h3>
+          <h3>{{ otherMagicStrings[0].secondH3 }}</h3>
         </div>
       </section>
     </main>
@@ -38,6 +38,15 @@
 export default {
   data() {
     return {
+      otherMagicStrings: [
+        {
+          firstH2: "Cover Letter",
+          p: "Turin, Italy",
+          secondH2: "Dear Hiring Manager,",
+          firstH3: "Sincerely,",
+          secondH3: "Timofei Emilian"
+        }
+      ],
       paragraphs: [
         {
           icon: "fa-user-tie",
