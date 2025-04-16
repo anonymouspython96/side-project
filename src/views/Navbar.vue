@@ -135,10 +135,9 @@ a:hover {
 
 .hamburger i {
   font-size: 1.8rem;
-  color: var(--color-white);
+  color: var(--color-red);
 }
 
-/* Mobile styles */
 @media (max-width: 992px) {
   .nav-container {
     padding: 0 20px;
@@ -184,7 +183,6 @@ a:hover {
     display: block;
   }
   
-  /* Show email in mobile menu */
   ul.active li:last-child {
     display: flex;
     justify-content: center;
