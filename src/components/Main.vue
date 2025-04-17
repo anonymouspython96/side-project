@@ -7,20 +7,13 @@
     <section class="my-face"></section>
   </main>
   <div id="cv">
-    <section class="summary-section">
-      <h2>{{ magicStrings[0].h2.second }}</h2>
-      <p>{{ magicStrings[0].summary.description }}</p>
-    </section>
 
     <section class="skills-section">
       <h2>{{ magicStrings[0].h2.third }}</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <ul>
-            <li>{{ magicStrings[0].skills.metadata }}</li>
-            <li>{{ magicStrings[0].skills.computationalThinking }}</li>
-            <li>{{ magicStrings[0].skills.problemSolving }}</li>
-            <li>{{ magicStrings[0].skills.github }}</li>
+            <li>{{ magicStrings[0].skills.description }}</li>
           </ul>
         </div>
       </div>
@@ -30,22 +23,12 @@
       <h2>{{ magicStrings[0].h2.fourth }}</h2>
       <div class="education-item">
         <h3>{{ magicStrings[0].education.excel.title }}</h3>
-        <p>{{ magicStrings[0].education.excel.subject }}</p>
-        <br />
         <p class="location">{{ magicStrings[0].education.excel.location }}</p>
         <p class="date">{{ magicStrings[0].education.excel.date }}</p>
       </div>
       <div class="education-item">
         <h3>{{ magicStrings[0].education.boolean.title }}</h3>
         <p>{{ magicStrings[0].education.boolean.description1 }}</p>
-        <p>{{ magicStrings[0].education.boolean.description2 }}</p>
-        <p>{{ magicStrings[0].education.boolean.description3 }}</p>
-        <p>{{ magicStrings[0].education.boolean.description4 }}</p>
-        <p>{{ magicStrings[0].education.boolean.description5 }}</p>
-        <p>{{ magicStrings[0].education.boolean.description6 }}</p>
-        <hr />
-        <p class="location">{{ magicStrings[0].education.boolean.location }}</p>
-        <p class="date">{{ magicStrings[0].education.boolean.date }}</p>
       </div>
       <div class="education-item">
         <h3>{{ magicStrings[0].education.diploma.title }}</h3>
@@ -53,8 +36,6 @@
         <p class="description">
           {{ magicStrings[0].education.diploma.description }}
         </p>
-        <p class="location">{{ magicStrings[0].education.diploma.location }}</p>
-        <p class="date">{{ magicStrings[0].education.diploma.date }}</p>
       </div>
     </section>
 
@@ -74,7 +55,6 @@
               .responsibilities"
             :key="responsibility"
           >
-            <i class="fas fa-code"></i>
             {{ responsibility }}
           </li>
         </ul>
@@ -95,7 +75,6 @@
               .responsibilities"
             :key="responsibility"
           >
-            <i class="fa-solid fa-money-bill-wave"></i>
             {{ responsibility }}
           </li>
         </ul>
@@ -114,7 +93,6 @@
               .responsibilities"
             :key="responsibility"
           >
-            <i class="fa-solid fa-people-group"></i>
             {{ responsibility }}
           </li>
         </ul>
@@ -130,13 +108,6 @@
             v-for="detail in magicStrings[0].projects.portfolio.details"
             :key="detail"
           >
-            <i
-              :class="
-                detail.includes('Vue.js')
-                  ? 'fas fa-laptop-code'
-                  : 'fas fa-mobile'
-              "
-            ></i>
             {{ detail }}
           </li>
         </ul>
@@ -180,18 +151,13 @@ export default {
           },
           intro: {
             description:
-              "Hi, I'm Emilian. My favorite tech language is JavaScript. I'm passionate about the entire world of web development, particularly front-end. I love the world of web development—it's my favorite hobby, and it's what keeps me going. Every website is like a piece of art waiting to be discovered. Every animation, every color, every font. Every detail matters, which is why I try not to rely too heavily on frameworks (even though I know them). That said:",
-          },
-          summary: {
-            description:
-              "A passionate and highly motivated Junior Front-End Developer with expertise in HTML, CSS, JavaScript, Vue.js, React, and modern JavaScript frameworks. Experienced in developing responsive and user-friendly websites, collaborating in team environments, and utilizing best practices for web design and performance optimization. Seeking a challenging role to leverage my skills and grow within a dynamic and innovative company.",
+              "Hi, I'm Emilian. My favorite tech language is CSS. I'm passionate about the entire world of web development, particularly front-end. I love the world of web development—it's my favorite hobby, and it's what keeps me going. Every website is like a piece of art waiting to be discovered. Every animation, every color, every font. Every detail matters, which is why I try not to rely too heavily on frameworks (even though I know them). That said:",
           },
           skills: {
-            metadata: "Metadata",
-            computationalThinking: "Computational thinking",
-            problemSolving: "Problem solving",
-            github:
-              "GitHub profile with the source code of my website: https://github.com/anonymouspython96",
+            description: `Semantic HTML TAGS / Advanced Styling / Responsive Design / Querying / Vue.js / React.js / Curiosity /
+              Object Oriented Program (OOP) / React (Redux Toolkit) / Bootstrap / Git / Cypress / Microsoft Access /
+              Advanced Excel / search engine optimisation / UI/UX / Debugging & Troubleshooting / Critical Thinking &
+              Problem Solving / CRM / Sales / DOM Manipulation`
           },
           education: {
             excel: {
@@ -203,21 +169,30 @@ export default {
             boolean: {
               title: "First Tech Academy (Boolean - Italy)",
               description1:
-                "Creation of dynamic and responsive web applications",
-              description2: "Acquired skills in HTML, CSS, SCSS, JS",
-              description3: "UI/UX design",
-              description4: "SEO",
-              description5: "BOOTSTRAP, Vue.js",
-              description6: "Code control via GIT",
-              location: "Italy",
-              date: "Graduated: July 2024",
+                `This intensive course served as a powerful skills accelerator, transforming me into a true web craftsman. Through its
+                hands-on approach, I learned to create dynamic, responsive web applications while mastering the art of writing clean
+                code in HTML, CSS, SCSS, and JavaScript.
+                The experience blended theory and practice in an impactful way: I designed compelling, intuitive user interfaces
+                while refining UI/UX design principles and SEO strategies to ensure projects not only stood out visually but also
+                achieved strong online visibility. The program provided complete immersion in cutting-edge tools and frameworks
+                like Bootstrap and Vue.js, enabling me to build flexible, modular layouts. Through Git version control, I developed
+                essential skills for effective collaboration and maintaining top-tier code quality.
+                With its innovation-driven approach and emphasis on problem-solving, this training ignited the confidence I needed
+                to tackle challenges in modern web development, making my profile more competitive and success-oriented.`
             },
             diploma: {
               title:
                 "Diploma in Administration, Finance, and Marketing Specialization in Business Information Systems",
-              description: "Istituto Germano Sommellier",
-              location: "Italy",
-              date: "July 2017",
+              description: `This educational program marked my first concrete introduction to the intersection of business and technology.
+                While providing a strong foundation in business disciplines like accounting, marketing, and financial management,
+                the course stood out for its robust technical component in information systems through its Business Information
+                Systems specialization.
+                During my studies, I developed practical skills in SQL and Microsoft Access, learning to design and manage relational
+                databases for business data organization and analysis. I also gained fundamental knowledge of HTML, CSS, and
+                JavaScript, which laid the groundwork for my subsequent passion for web development. The program further helped me cultivate a logical, problem-solving                 approach - essential for addressing complex
+                business scenarios with digital tools.
+                This experience served as the spark: it began my transformation from student to developer, blending methodology,
+                precision, and an ever-growing thirst for innovation.`
             },
           },
           experience: {
@@ -226,15 +201,11 @@ export default {
               company: "WeGlad - Country: Italy",
               details: "August 2024 - September 2024",
               responsibilities: [
-                "Responsive development of the WeGlad application and its components",
-                "Design and content creation",
-                "UI/UX",
-                "SEO practices",
-                "Use of React.js and Redux",
-                "SCSS, HTML5, JS",
-                "BOOTSTRAP",
-                "Resolving issues related to magic strings and magic numbers",
-                "Testing using the Cypress method",
+                `In this work experience, I developed responsive interfaces for the WeGlad app using React.js and Redux, with a
+                strong focus on UI/UX and consistent design.
+                I utilized technologies such as SCSS, HTML5, and vanilla JavaScript to ensure visual consistency and quality. I
+                demonstrated troubleshooting and debugging skills, resolving critical issues like magic strings and magic numbers.
+                Finally, I conducted automated tests with Cypress to ensure high performance, maintainability, and security.`
               ],
             },
             photoSeller: {
@@ -242,10 +213,14 @@ export default {
               company: "Foto di Alex Lo Votrico - City: Bari - Country: Italy",
               details: "July 2016 – December 2024",
               responsibilities: [
-                "Sale of photographs",
-                "Client negotiation",
-                "Strategies to maximize profits",
-                "Distribution of high-quality photos during events",
+                `In this role, I operated in a highly competitive environment where mastering advanced sales techniques and
+                negotiation strategies was critical to differentiating our offerings in the market.
+                I leveraged photography skills to enhance the aesthetic quality of products, tailoring the visual style to appeal to
+                circus and exhibition audiences who value originality and visual impact. I managed the sale and promotion of
+                photographs at events and performances, emphasizing strong communication, visual storytelling, and personalized
+                solutions to meet the demands of discerning clients.
+                Additionally, I applied market research and competitor analysis techniques to refine sales strategies in a fast-paced
+                and ever-evolving environment.`
               ],
             },
             aiesec: {
@@ -253,11 +228,15 @@ export default {
               company: "AIESEC Country: Italy",
               details: "March 2017 – March 2018",
               responsibilities: [
-                "Managed a team of 4 sales members",
-                "Sold volunteering projects to schools",
-                "Mentored junior salespeople",
-                "Team activities managed via CRM",
-                "Monitored team performance",
+                `During my volunteer experience with AIESEC, I led a team of four sales representatives promoting volunteer projects
+                in schools within a competitive environment that required continuous refinement of sales strategies.
+                In addition to mentoring junior sales team members, I implemented CRM systems for external clients – essential
+                tools for tracking sales progress, analyzing customer volume and availability, and enabling timely, targeted
+                interventions. Concurrently, I managed team performance monitoring through Excel, setting clear objectives and
+                implementing data-driven strategies informed by feedback to ensure consistent performance improvement.
+                This experience, which combined sales dynamics with rigorous data analysis, allowed me to refine my leadership,
+                problem-solving, and results-driven approach – critical competencies for operating effectively in rapidly evolving
+                market environments.`
               ],
             },
           },
@@ -334,11 +313,6 @@ main {
   background-size: cover;
   background-position: center -80px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-hr {
-  width: 50%;
-  margin: 1rem 0;
 }
 
 .my-face:hover {
@@ -428,14 +402,6 @@ li {
   line-height: 1.6;
   display: flex;
   align-items: center;
-}
-
-li i {
-  position: absolute;
-  left: 0;
-  color: var(--color-red);
-  width: 1.5rem;
-  text-align: center;
 }
 
 .language-list {

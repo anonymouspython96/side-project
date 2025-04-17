@@ -14,20 +14,15 @@
         <h2>{{ otherMagicStrings[0].secondH2 }}</h2>
       </section>
 
-      <section
-        class="paragraph"
-        v-for="(para, index) in paragraphs"
-        :key="index"
-      >
-        <i class="paragraph-icon fas" :class="para.icon"></i>
-        <p>{{ para.text }}</p>
+      <section class="paragraph">
+        <p>{{ paragraph[0].coverLetter }}</p>
       </section>
 
       <section class="closing">
         <h3>{{ otherMagicStrings[0].firstH3 }}</h3>
         <div class="signature">
           <i class="fas fa-pen-nib"></i>
-          <h3>{{ otherMagicStrings[0].secondH3 }}</h3>
+          <h3><em>{{ otherMagicStrings[0].secondH3 }}</em></h3>
         </div>
       </section>
     </main>
@@ -44,25 +39,33 @@ export default {
           p: "Turin, Italy",
           secondH2: "Dear Hiring Manager,",
           firstH3: "Sincerely,",
-          secondH3: "Timofei Emilian"
-        }
+          secondH3: "Timofei Emilian",
+        },
       ],
-      paragraphs: [
+      paragraph: [
         {
-          icon: "fa-user-tie",
-          text: "I am excited to apply for the Junior Front-End Developer position at your company, where I aim to leverage my robust technical foundation in web development, certified training from First Tech Academy (Boolean - Italy), and hands-on project experience to contribute to a team passionate about crafting innovative digital solutions.",
-        },
-        {
-          icon: "fa-briefcase",
-          text: "During my tenure at WeGlad, I honed my expertise in developing responsive, accessibility-first interfaces using React.js and Vue.js. Collaborating within agile, cross-functional teams, I prioritized performance optimization and UI/UX enhancements while ensuring code scalability and readability. This experience not only sharpened my technical execution but also deepened my commitment to transforming design concepts into intuitive, user-centric interfaces that align with business objectives.",
-        },
-        {
-          icon: "fa-code",
-          text: "Beyond professional work, I actively expand my skillset through self-driven projects. For example, I engineered a dynamic portfolio website using Vue.js, showcasing modern web principles like mobile-first responsiveness and semantic HTML5. My GitHub profile features detailed code repositories that highlight my dedication to writing clean, maintainable code and experimenting with emerging tools. What excites me most about this opportunity is the reputation for nurturing junior talent through mentorship and collaborative innovation. ",
-        },
-        {
-          icon: "fa-rocket",
-          text: "I thrive in environments where curiosity is rewarded, iteration is embraced, and developer growth is viewed as integral to product excellence. I’m particularly eager to contribute fresh perspectives to your team while learning from seasoned professionals who value both technical rigor and creative problem-solving.",
+          coverLetter: `I am excited to apply for the Front End Developer position at your company. I am a dynamic and
+          results-driven developer with a strong background in creating responsive, SEO-optimized user
+          interfaces, supported by advanced technical skills in React.js, Redux, HTML5, CSS, and JavaScript.
+          During my recent internship as a Front End Developer at WeGlad, I contributed to the development
+          of a web application using React.js and Redux Toolkit, focusing on intuitive UI/UX design and visual
+          consistency. By leveraging tools like Cypress for automated testing, I ensured high performance and
+          code maintainability while addressing technical challenges such as magic strings and magic
+          numbers. This experience sharpened my debugging, problem-solving, and agile project management
+          skills.
+          Beyond technical expertise, I bring cross-functional experience from sales and leadership roles. As a
+          Sales Team Leader at AIESEC, I coordinated a team of four, implementing CRM systems and data
+          analysis to optimize sales strategies. This role strengthened my ability to work under pressure,
+          communicate effectively, and adapt to fast-changing scenarios—skills I consider equally valuable in
+          software development.
+          My education includes an intensive Front End Development course at Boolean, where I mastered
+          modern technologies like Vue.js, Bootstrap, and Git, and a Diploma in Business Information
+          Systems, which laid the foundation for my passion for programming. My profile is further enhanced
+          by an advanced Excel certification and proficiency in tools like Cypress and SCSS.
+          I am particularly motivated to join an innovative team where I can contribute creativity and technical
+          rigor. Among my personal projects, I developed a CV website (built with Vue.js) and maintain an
+          active GitHub profile, where I experiment with front-end solutions and best practices.
+          I am available for an interview and look forward to your response.`,
         },
       ],
     };
