@@ -43,24 +43,6 @@
       <h2>{{ magicStrings[0].h2.fifth }}</h2>
       <div class="job">
         <div class="job-header">
-          <h3>{{ magicStrings[0].experience.weglad.title }}</h3>
-          <p class="company">{{ magicStrings[0].experience.weglad.company }}</p>
-          <p class="job-details">
-            {{ magicStrings[0].experience.weglad.details }}
-          </p>
-        </div>
-        <ul class="job-responsibilities">
-          <li
-            v-for="responsibility in magicStrings[0].experience.weglad
-              .responsibilities"
-            :key="responsibility"
-          >
-            {{ responsibility }}
-          </li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-header">
           <h3>{{ magicStrings[0].experience.photoSeller.title }}</h3>
           <p class="company">
             {{ magicStrings[0].experience.photoSeller.company }}
@@ -196,18 +178,6 @@ export default {
             },
           },
           experience: {
-            weglad: {
-              title: "Front End Web Developer (Remote)",
-              company: "WeGlad - Country: Italy",
-              details: "August 2024 - September 2024",
-              responsibilities: [
-                `In this work experience, I developed responsive interfaces for the WeGlad app using React.js and Redux, with a
-                strong focus on UI/UX and consistent design.
-                I utilized technologies such as SCSS, HTML5, and vanilla JavaScript to ensure visual consistency and quality. I
-                demonstrated troubleshooting and debugging skills, resolving critical issues like magic strings and magic numbers.
-                Finally, I conducted automated tests with Cypress to ensure high performance, maintainability, and security.`
-              ],
-            },
             photoSeller: {
               title: "Photo Seller",
               company: "Foto di Alex Lo Votrico - City: Bari - Country: Italy",
