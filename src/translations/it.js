@@ -2,7 +2,7 @@
 export default {
   navbar: {
     home: 'Home',
-    about: 'Chi siamo',
+    about: 'Chi sono',
     contact: 'Contatti',
   },
   home: {
