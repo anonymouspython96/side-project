@@ -331,27 +331,28 @@ section {
 }
 
 .hero-cta {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  // justify-content: center; // Rimosso o modificato per il default, gestito dal media query
+  flex-wrap: wrap; // Permette ai bottoni di andare a capo
 
-    @media (min-width: 768px) {
-        justify-content: flex-start;
+  @media (min-width: 768px) {
+    justify-content: flex-start; // Allinea a sinistra su desktop/tablet
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; // Imposta la direzione in colonna su schermi piccoli
+    align-items: center; // Centra orizzontalmente gli elementi in colonna
+    gap: 10px;
+
+    .btn {
+      width: 60%; // Mantieni la larghezza per i bottoni in colonna
     }
+  }
 
-    @media (max-width: 480px) {
-        flex-direction: column;
-        gap: 10px;
-
-        .btn {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 380px) {
-        gap: 8px;
-    }
+  @media (max-width: 380px) {
+    gap: 8px;
+  }
 }
 
 .hero-image-placeholder {
