@@ -37,15 +37,17 @@ export default {
   padding: 8px 15px;
   font-size: 15px;
   cursor: pointer;
-  border: 1px solid var(--button-border-color, #a0a0a0);
+  border: 1px solid var(--color-accent-blue);
   border-radius: 6px;
-  background-color: var(--button-bg-color, #f5f5f5);
-  color: var(--button-text-color, #444);
+  background-color: var(--color-background-light);
+  color: var(--color-accent-blue);
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+  min-width: 60px;
 
   &:hover {
-    background-color: var(--button-hover-bg-color, #e0e0e0);
-    border-color: var(--button-hover-border-color, #808080);
+    background-color: var(--color-accent-blue);
+    color: white;
+    border-color: var(--color-accent-blue);
   }
 
   &:active {
@@ -53,9 +55,9 @@ export default {
   }
 
   &.active {
-    background-color: var(--button-active-bg-color, #007bff);
-    color: var(--button-active-text-color, white);
-    border-color: var(--button-active-border-color, #0056b3);
+    background-color: var(--color-accent-blue);
+    color: white;
+    border-color: var(--color-accent-blue);
   }
 }
 </style>
