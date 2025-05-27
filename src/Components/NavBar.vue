@@ -15,6 +15,7 @@
     </div>
 
     <div class="nav-controls">
+      <span><strong>Lang:</strong></span>
       <LanguageButton />
     </div>
   </nav>
@@ -100,7 +101,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  background-color: var(--navbar-bg-color);
+  border-bottom: var(--color-accent-blue-dark);
   color: var(--navbar-text-color);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -169,7 +170,7 @@ export default {
   }
 
   .nav-link {
-    color: inherit;
+    color: var(--color-accent-blue);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -218,6 +219,10 @@ export default {
     align-items: center;
     gap: 15px;
     order: 3;
+
+    span {
+      color: var(--color-accent-blue);
+    }
   }
 
   .hamburger {
@@ -238,7 +243,7 @@ export default {
       display: block;
       width: 100%;
       height: 2px;
-      background-color: var(--navbar-text-color);
+      background-color: var(--color-accent-blue);;
       transition: all 0.3s ease;
     }
   }
