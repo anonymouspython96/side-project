@@ -5,13 +5,17 @@
       <p class="page-description">{{ translations.contact.description }}</p>
 
       <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/timofeiemilian96/" target="_blank" rel="noopener noreferrer" class="btn social-btn linkedin">
+        <a href="https://www.linkedin.com/in/timofeiemilian96/" target="_blank" rel="noopener noreferrer"
+          class="btn social-btn linkedin">
           <i class="fab fa-linkedin"></i> {{ translations.contact.linkedinButton }}
         </a>
-        <a href="https://wa.me/+393508324707" target="_blank" rel="noopener noreferrer" class="btn social-btn whatsapp">
+        <a href="https://wa.me/+393508324707?text=Sei tu il suchiacazzi!" target="_blank" rel="noopener noreferrer"
+          class="btn social-btn whatsapp">
           <i class="fab fa-whatsapp"></i> {{ translations.contact.whatsappButton }}
         </a>
-        <a href="https://github.com/anonymouspython96" target="_blank" rel="noopener noreferrer" class="btn social-btn github">
+
+        <a href="https://github.com/anonymouspython96" target="_blank" rel="noopener noreferrer"
+          class="btn social-btn github">
           <i class="fab fa-github"></i> {{ translations.contact.githubButton }}
         </a>
         <a href="mailto:timofeiemilian9000@gmail.com" class="btn social-btn email">
@@ -60,7 +64,7 @@ export default {
 .contact-container {
   display: flex;
   justify-content: center; // Centra orizzontalmente
-  align-items: center;    // Centra verticalmente
+  align-items: center; // Centra verticalmente
   min-height: calc(100vh - var(--navbar-height, 60px) - var(--footer-height, 0px)); // Adatta l'altezza
   padding: 20px;
   background-color: var(--color-background-light); // Usa una variabile globale se definita
@@ -81,6 +85,7 @@ export default {
   @media (max-width: 767px) {
     padding: 30px;
   }
+
   @media (max-width: 480px) {
     padding: 20px;
   }
@@ -95,6 +100,7 @@ export default {
   @media (max-width: 767px) {
     font-size: 2.2em;
   }
+
   @media (max-width: 480px) {
     font-size: 1.8em;
   }
@@ -110,6 +116,7 @@ export default {
     font-size: 1.1em;
     margin-bottom: 25px;
   }
+
   @media (max-width: 480px) {
     font-size: 1em;
     margin-bottom: 20px;
@@ -127,6 +134,7 @@ export default {
     gap: 15px;
     margin-bottom: 30px;
   }
+
   @media (max-width: 480px) {
     gap: 10px;
     margin-bottom: 25px;
@@ -160,6 +168,7 @@ export default {
   &.linkedin {
     background-color: #0077B5;
     color: white;
+
     &:hover {
       background-color: #005f93;
     }
@@ -168,6 +177,7 @@ export default {
   &.whatsapp {
     background-color: #25D366;
     color: white;
+
     &:hover {
       background-color: #1DA851;
     }
@@ -176,6 +186,7 @@ export default {
   &.github {
     background-color: #333;
     color: white;
+
     &:hover {
       background-color: #1a1a1a;
     }
@@ -184,6 +195,7 @@ export default {
   &.email {
     background-color: var(--color-accent-blue); // Usa il colore principale del tema
     color: white;
+
     &:hover {
       background-color: var(--color-accent-blue-dark);
     }
@@ -193,14 +205,17 @@ export default {
     width: calc(50% - 15px); // Due bottoni per riga su schermi medi
     padding: 12px 20px;
     font-size: 1em;
+
     i {
       margin-right: 8px;
     }
   }
+
   @media (max-width: 480px) {
     width: 100%; // Un bottone per riga su schermi piccoli
     padding: 10px 15px;
     font-size: 0.95em;
+
     i {
       margin-right: 5px;
     }
