@@ -9,7 +9,7 @@
           class="btn social-btn linkedin">
           <i class="fab fa-linkedin"></i> {{ translations.contact.linkedinButton }}
         </a>
-        <a href="https://wa.me/+393508324707?text=Sei tu il suchiacazzi!" target="_blank" rel="noopener noreferrer"
+        <a href="https://wa.me/+393508324707?text=Ciao!" target="_blank" rel="noopener noreferrer"
           class="btn social-btn whatsapp">
           <i class="fab fa-whatsapp"></i> {{ translations.contact.whatsappButton }}
         </a>
